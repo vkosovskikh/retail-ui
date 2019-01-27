@@ -172,7 +172,7 @@ gemini.suite("ComboBox", () => {
         .before(renderStory("ComboBox", "focus flow"))
         .setCaptureElements("#test-element")
         .capture("before")
-        .capture("after Enter on Item", (action) => {
+        .capture("after Enter on Item", action => {
           action.sendKeys(gemini.ENTER);
         });
     });
